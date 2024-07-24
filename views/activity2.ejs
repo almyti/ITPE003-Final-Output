@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mangubat Medical Record</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://5.imimg.com/data5/SELLER/Default/2021/8/LR/AP/SW/6976612/hospital-wallpaper.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            margin: 0;
+            padding: 1em; /* Reduced padding */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        header {
+            background-color: #00246B;
+            color: white;
+            text-align: center;
+            padding: 0.5em 0; /* Reduced padding */
+            font-size: 1.5em; /* Adjusted font size */
+        }
+        table {
+            width: 100%; /* Set to 100% for full width */
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.9); /* Transparent white */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+            border: 3px solid #00246B; /* Reduced border size */
+            margin: 1em 0; /* Reduced margin */
+        }
+        th, td {
+            padding: 0.5em; /* Reduced padding */
+            text-align: left;
+            font-size: 0.9em; /* Adjusted font size */
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #00246B;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #CADCFC;
+        }
+        tr:hover {
+            background-color: rgba(202, 220, 252, 0.5);
+        }
+        .back-link {
+    display: block;
+    text-align: center;
+    margin-top: 1em; /* Adjusted margin */
+    color: #00246B; /* Original link color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em; /* Adjusted font size */
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    border: 2px solid #00246B; /* Border color to match the text color */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effects */
+    position: relative; /* Relative positioning for margin and centering */
+    width: fit-content; /* Adjust width to content */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+.back-link:hover,
+.back-link:focus {
+    background-color: #00246B; /* Background color on hover */
+    color: #fff; /* White text on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Patient Medical Information</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Date of Birth</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Emergency Contact Person</th>
+                <th>Emergency Contact Phone</th>
+                <th>Allergy</th>
+                <th>Findings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if (data && data.length > 0) { %>
+                <% data.forEach((item) => { %>
+                    <tr>
+                        <td><%= item.lastName %></td>
+                        <td><%= item.firstName %></td>
+                        <td><%= item.dateOfBirth %></td>
+                        <td><%= item.address %></td>
+                        <td><%= item.phone %></td>
+                        <td><%= item.email %></td>
+                        <td><%= item.emergencyContact %></td>
+                        <td><%= item.emergencyContactPhone %></td>
+                        <td><%= item.allergy %></td>
+                        <td><%= item.findings %></td>
+                    </tr>
+                <% }); %>
+            <% } else { %>
+                <tr>
+                    <td colspan="10">No data available</td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+    <a href="/" class="back-link">Back to Home</a>
+</body>
+</html>

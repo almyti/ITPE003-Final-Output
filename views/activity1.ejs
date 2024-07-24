@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hours to Minutes Conversion</title>
+    <style>
+ body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://techcommunity.microsoft.com/t5/image/serverpage/image-id/469874iFE0D4F020442C5F9/image-size/large?v=v2&px=999');
+    background-size: cover;
+    background-position: center;
+    color: #B85042; /* Red text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Arrange items in a column */
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: #B85042; /* Red heading color */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000; /* Greenish gray label color */
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #A7BEAE; /* Greenish gray border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #B85042; /* Red button background */
+    color: #fff; /* White button text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #A7BEAE; /* Greenish gray hover background */
+}
+
+.result-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 400px;
+    text-align: center;
+}
+
+.result-container h2 {
+    color: #B85042; /* Red heading color */
+    margin-bottom: 20px;
+}
+
+.result-container p {
+    color: #333; /* Dark text color */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.back-link {
+    position: absolute; /* Position absolutely to place it at the bottom right */
+    bottom: 20px; /* Space from the bottom */
+    right: 20px; /* Space from the right */
+    color: #B85042; /* Red link color */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    border: 2px solid #B85042; /* Red border */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effects */
+}
+
+.back-link:hover,
+.back-link:focus {
+    background-color: #B85042; /* Red background on hover */
+    color: #fff; /* White text on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hours to Minutes Conversion</h1>
+        <form action="https://dlsud.edu20.org/convert" method="post">
+            <label for="hours">Enter Hours:</label>
+            <input type="number" id="hours" name="hours" required="">
+            <button type="submit">Convert</button>
+        </form>
+    </div>
+    <a href="/" class="back-link">Back to Home</a>
+</body>
+</html>

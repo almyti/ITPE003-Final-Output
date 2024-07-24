@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-File Server</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1616088410192-d1b123712994?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWluaW1hbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        .button-container {
+            margin: 10px 0;
+        }
+        .button-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #962E2A; /* Updated color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button-container a:hover {
+            background-color: #E3867D; /* Updated color on hover */
+        }
+        .back-link {
+            position: absolute;
+            top: 650px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #962E2A;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            z-index: 2; /* Ensure it is above the overlay */
+        }
+        .back-link:hover {
+            background-color: #E3867D;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="content">
+        <h1>Multi-File Server!</h1>
+        <ul>
+            <li class="button-container">
+                <a href="/movies">Movies</a>
+            </li>
+            <li class="button-container">
+                <a href="/aboutme">About Me</a>
+            </li>
+            <li class="button-container">
+                <a href="/friends">Friends</a>
+            </li>
+        </ul>
+    </div>
+    <a href="/" class="back-link">Back to Home</a>
+</body>
+</html>

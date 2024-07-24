@@ -1,0 +1,1045 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://img95.lovepik.com/photo/40102/2706.gif_wh860.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header.sticky-header {
+    background-color: rgba(68, 68, 68, 0.8); /* Semi-transparent background */
+    color: #F5B7B1;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.spark {
+    width: 43px;
+    height: 40px;
+    background: #AED6F1;
+    clip-path: polygon(40% 40%, 50% 0, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0 50%);
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #F5B7B1;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active {
+    background-color: #AED6F1;
+    color: #333;
+    border-radius: 50px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #fbf3e7;
+    flex: 1;
+}
+
+.intro {
+    flex: 1;
+    padding: 40px;
+    margin-left: 50px;
+}
+
+.intro img {
+    width: 500%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 30px auto;
+}
+
+.intro h2 {
+    font-size: 62px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.intro p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+.intro .linkedin {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E74C3C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 15px;
+    margin-bottom: 20px; /* Space between LinkedIn link and social icons */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Adjust spacing between icons */
+    justify-content: center; /* Center the icons horizontally */
+    margin-left: -500px;
+    margin-top: 65px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Adjust the size as needed */
+    height: 30px;
+    border-radius: 50%;
+    font-size: 15px; /* Adjust the icon size */
+    color: #fff; /* Icon color */
+    text-decoration: none;
+    text-shadow: 2px 2px 3px #333; /* Optional text shadow for better readability */
+    box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.2); 
+}
+
+.facebook {
+    background-color: #1877f2; /* Facebook blue */
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f58529, #feda77, #dd2a7b, #8134af); /* Instagram gradient */
+}
+
+.github {
+    background-color: #333; /* GitHub dark gray */
+}
+
+.profile {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    top: 0;
+    padding-top: 10px;
+}
+
+.image-container {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    width: 350px;
+    height: auto;
+    z-index: 10;
+}
+
+.freely-movable-image {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.profile img {
+    width: 70%;
+    height: auto;
+    border-radius: 5%;
+    margin-top: 0;
+}
+
+.info {
+    position: relative;
+    margin-top: 40px;
+    height: 84px;
+}
+
+.info-item {
+    position: absolute;
+    background-color: #AED6F1;
+    color: #444;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.info-item1 {
+    top: 100px;
+    left: 380px;
+}
+
+.info-item2 {
+    top: 230px;
+    left: 50px;
+}
+
+.purple-container {
+    background-color: #ab7171;
+    color: #fff;
+    padding: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    margin-top: -70px;
+}
+
+.contact {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact p {
+    margin: 3px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    text-align: left;
+    padding-left: 100px;
+    font-size: 14px;
+}
+
+.contact .contact-header {
+    font-size: 28px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+/* Main container styling */
+.main2-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center child elements horizontally */
+    padding: 40px;
+    width: 100vw; /* Full viewport width */
+    max-width: 100%; /* Ensure container does not exceed viewport width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: #eaf1f1; /* Background color for the container */
+    margin: 0 auto;
+    overflow: hidden; /* Prevent horizontal scroll */
+    position: relative;
+}
+
+/* Heading styling */
+.main2-container h2 {
+    font-size: 32px; /* Adjust size as needed */
+    color: #333;
+    text-align: center; /* Center text horizontally */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Full width for heading */
+    max-width: 1000px; /* Maximum width to prevent overflow */
+    box-sizing: border-box;
+    margin-left: 120px; /* Center the heading */
+    
+}
+
+/* Paragraph styling */
+.main2-container p.intro-text {
+    font-size: 16px; /* Adjust size as needed */
+    color: #666;
+    text-align: center; /* Center text horizontally */
+    margin-bottom: 30px;
+    width: 100%; /* Full width for paragraph */
+    max-width: 1000px; /* Maximum width to prevent overflow */
+    box-sizing: border-box;
+    margin-left: 120px;
+}
+
+.main2-container p.activity-description {
+    font-size: 17px; /* Adjust size as needed */
+    color: #444;
+    text-align: justify; /* Justify text for readability */
+    margin-bottom: 10px; /* Space below the paragraph */
+    width: 100%; /* Full width for paragraph */
+    max-width: 800px; /* Restrict maximum width for better layout */
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Unordered list styling */
+.main2-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Full width for the list */
+    max-width: 1000px; /* Maximum width for better layout */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+}
+
+/* List item styling */
+.main2-container ul li {
+    width: 100%; /* Full width for list items */
+    margin: 10px 0; /* Adjust spacing between items */
+}
+
+/* Link styling */
+.main2-container ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f8f9fa; /* Light background for each item */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for items */
+    width: 100%; /* Make the links fill the list item width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.main2-container ul li a:hover,
+.main2-container ul li a:focus,
+.main2-container ul li a:active {
+    background-color: #d0e9f4; /* Slightly darker on hover */
+    color: #000;
+}
+
+/* Image styling */
+.main2-container img {
+    width: 100%; /* Ensure image fits within the container */
+    max-width: 100%; /* Restrict maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.main2-container img:hover,
+.main2-container img:focus,
+.main2-container img:active {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Image content styling */
+.main2-container .image-content {
+    width: 100%; /* Full width for image content */
+    max-width: 800px; /* Restrict maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px;
+}
+
+.container.sticky-container {
+    position: relative;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1; /* Take up available space */
+    margin-left: 20px; /* Add some space between the image and the text */
+}
+
+.image-content {
+    flex: 1; /* Take up available space */
+    max-width: 100%; /* Restrict image width to half of the container */
+}
+
+.freely-movable-image {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    z-index: 20; /* Ensure it's on top */
+    cursor: move;
+}
+
+.star1 {
+    top: 150px;
+    left: 888px;
+    width: 140px;
+    height: 140px;
+}
+
+.star2 {
+    top: 528px;
+    left: 1240px;
+    width: 120px;
+    height: 120px;
+}
+
+.star3 {
+    top: 440px;
+    left: 410px;
+    width: 80px;
+    height: 80px;
+}
+
+.star4 {
+    top: 160px;
+    left: 440px;
+    width: 150px;
+    height: 150px;
+}
+
+.star5 {
+    top: 100px;
+    left: 50px;
+    width: 90px;
+    height: 90px;
+}
+/* Main container styling */
+.main3-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 100vw; /* Full viewport width */
+    max-width: 100%; /* Ensure container does not exceed viewport width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: #f6f2f8; /* Background color for the container */
+    overflow: hidden; /* Prevent horizontal scroll */
+}
+
+/* Sticky container */
+.sticky-container {
+    background-color: #fff; /* White background for the sticky container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the container */
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Content wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Image content */
+.image-content {
+    flex: 1;
+    width: 100%; /* Full width */
+    max-width: 500px; /* Restrict image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for image */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+/* Image hover effect */
+.image-content:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Text content */
+.text-content {
+    flex: 2;
+    margin-left: 20px; /* Space between image and text */
+}
+
+/* Activity description paragraph */
+.activity-description {
+    font-size: 16px; /* Font size for readability */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+    width: 100%; /* Full width for text */
+}
+
+/* Unordered list */
+.text-content ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: center;
+}
+
+/* List item styling */
+.text-content ul li {
+    margin: 10px 0; /* Space between list items */
+}
+
+/* List link styling */
+.text-content ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    background-color: #eaf1f1; /* Light background for list items */
+    border-radius: 5px; /* Rounded corners for link */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Link hover effect */
+.text-content ul li a:hover,
+.text-content ul li a:focus,
+.text-content ul li a:active {
+    background-color: #d0e9f4; /* Slightly darker background on hover */
+    color: #0056b3; /* Darker link color on hover */
+}
+.main2-container img {
+    width: 100%; /* Ensure image fits within the container */
+    max-width: 300%; /* Restrict maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.main3-container img:hover,
+.main3-container img:focus,
+.main3-container img:active {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Image content styling */
+.main3-container .image-content {
+    width: 100%; /* Full width for image content */
+    max-width: 800px; /* Restrict maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px;
+}
+
+.container.sticky-container {
+    position: relative;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1; /* Take up available space */
+    margin-left: 20px; /* Add some space between the image and the text */
+}
+
+.image-content {
+    flex: 1; /* Take up available space */
+    max-width: 100%; /* Restrict image width to half of the container */
+}
+
+.main3-container p.activity-description {
+    font-size: 17px; /* Adjust size as needed */
+    color: #444;
+    text-align: justify; /* Justify text for readability */
+    margin-bottom: 10px; /* Space below the paragraph */
+    width: 100%; /* Full width for paragraph */
+    max-width: 800px; /* Restrict maximum width for better layout */
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*m4 */
+
+.main4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 100vw; /* Full viewport width */
+    max-width: 100%; /* Ensure container does not exceed viewport width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: #E9F7EF; /* Background color for the container */
+    overflow: hidden; /* Prevent horizontal scroll */
+}
+
+/* Sticky container */
+.sticky-container {
+    background-color: #fff; /* White background for the sticky container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the container */
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Content wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Image content */
+.image-content {
+    flex: 1;
+    width: 100%; /* Full width */
+    max-width: 500px; /* Restrict image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for image */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+/* Image hover effect */
+.image-content:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Text content */
+.text-content {
+    flex: 2;
+    margin-left: 20px; /* Space between image and text */
+}
+
+/* Activity description paragraph */
+.activity-description {
+    font-size: 16px; /* Font size for readability */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+    width: 100%; /* Full width for text */
+}
+
+/* Unordered list */
+.text-content ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: center;
+}
+
+/* List item styling */
+.text-content ul li {
+    margin: 10px 0; /* Space between list items */
+}
+
+/* List link styling */
+.text-content ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    background-color: #eaf1f1; /* Light background for list items */
+    border-radius: 5px; /* Rounded corners for link */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Link hover effect */
+.text-content ul li a:hover,
+.text-content ul li a:focus,
+.text-content ul li a:active {
+    background-color: #d0e9f4; /* Slightly darker background on hover */
+    color: #0056b3; /* Darker link color on hover */
+}
+.main2-container img {
+    width: 100%; /* Ensure image fits within the container */
+    max-width: 300%; /* Restrict maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.main4-container img:hover,
+.main4-container img:focus,
+.main4-container img:active {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Image content styling */
+.main4-container .image-content {
+    width: 100%; /* Full width for image content */
+    max-width: 800px; /* Restrict maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px;
+}
+
+.container.sticky-container {
+    position: relative;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1; /* Take up available space */
+    margin-left: 20px; /* Add some space between the image and the text */
+}
+
+.image-content {
+    flex: 1; /* Take up available space */
+    max-width: 100%; /* Restrict image width to half of the container */
+}
+
+.main4-container p.activity-description {
+    font-size: 17px; /* Adjust size as needed */
+    color: #444;
+    text-align: justify; /* Justify text for readability */
+    margin-bottom: 10px; /* Space below the paragraph */
+    width: 100%; /* Full width for paragraph */
+    max-width: 800px; /* Restrict maximum width for better layout */
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*5*/
+
+.main5-container p.activity-description {
+    font-size: 17px; /* Adjust size as needed */
+    color: #444;
+    text-align: justify; /* Justify text for readability */
+    margin-bottom: 10px; /* Space below the paragraph */
+    width: 100%; /* Full width for paragraph */
+    max-width: 800px; /* Restrict maximum width for better layout */
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main5-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 100vw; /* Full viewport width */
+    max-width: 100%; /* Ensure container does not exceed viewport width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: #FDEDEC; /* Background color for the container */
+    overflow: hidden; /* Prevent horizontal scroll */
+}
+
+/* Sticky container */
+.sticky-container {
+    background-color: #fff; /* White background for the sticky container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the container */
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Content wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Image content */
+.image-content {
+    flex: 1;
+    width: 100%; /* Full width */
+    max-width: 500px; /* Restrict image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for image */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+/* Image hover effect */
+.image-content:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Text content */
+.text-content {
+    flex: 2;
+    margin-left: 20px; /* Space between image and text */
+}
+
+/* Activity description paragraph */
+.activity-description {
+    font-size: 16px; /* Font size for readability */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+    width: 100%; /* Full width for text */
+}
+
+/* Unordered list */
+.text-content ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: center;
+}
+
+/* List item styling */
+.text-content ul li {
+    margin: 10px 0; /* Space between list items */
+}
+
+/* List link styling */
+.text-content ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    background-color: #eaf1f1; /* Light background for list items */
+    border-radius: 5px; /* Rounded corners for link */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Link hover effect */
+.text-content ul li a:hover,
+.text-content ul li a:focus,
+.text-content ul li a:active {
+    background-color: #d0e9f4; /* Slightly darker background on hover */
+    color: #0056b3; /* Darker link color on hover */
+}
+.main2-container img {
+    width: 100%; /* Ensure image fits within the container */
+    max-width: 300%; /* Restrict maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.main5-container img:hover,
+.main5-container img:focus,
+.main5-container img:active {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Image content styling */
+.main5-container .image-content {
+    width: 100%; /* Full width for image content */
+    max-width: 800px; /* Restrict maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px;
+}
+
+.container.sticky-container {
+    position: relative;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1; /* Take up available space */
+    margin-left: 20px; /* Add some space between the image and the text */
+}
+
+.image-content {
+    flex: 1; /* Take up available space */
+    max-width: 100%; /* Restrict image width to half of the container */
+}
+
+/*6*/
+
+.main6-container p.activity-description {
+    font-size: 17px; /* Adjust size as needed */
+    color: #444;
+    text-align: justify; /* Justify text for readability */
+    margin-bottom: 10px; /* Space below the paragraph */
+    width: 100%; /* Full width for paragraph */
+    max-width: 800px; /* Restrict maximum width for better layout */
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main6-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 100vw; /* Full viewport width */
+    max-width: 100%; /* Ensure container does not exceed viewport width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: #FBEEE6; /* Background color for the container */
+    overflow: hidden; /* Prevent horizontal scroll */
+}
+
+/* Sticky container */
+.sticky-container {
+    background-color: #fff; /* White background for the sticky container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the container */
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Content wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Image content */
+.image-content {
+    flex: 1;
+    width: 100%; /* Full width */
+    max-width: 500px; /* Restrict image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for image */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+/* Image hover effect */
+.image-content:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Text content */
+.text-content {
+    flex: 2;
+    margin-left: 20px; /* Space between image and text */
+}
+
+/* Activity description paragraph */
+.activity-description {
+    font-size: 16px; /* Font size for readability */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+    width: 100%; /* Full width for text */
+}
+
+/* Unordered list */
+.text-content ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: center;
+}
+
+/* List item styling */
+.text-content ul li {
+    margin: 10px 0; /* Space between list items */
+}
+
+/* List link styling */
+.text-content ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    background-color: #eaf1f1; /* Light background for list items */
+    border-radius: 5px; /* Rounded corners for link */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Link hover effect */
+.text-content ul li a:hover,
+.text-content ul li a:focus,
+.text-content ul li a:active {
+    background-color: #d0e9f4; /* Slightly darker background on hover */
+    color: #0056b3; /* Darker link color on hover */
+}
+.main2-container img {
+    width: 100%; /* Ensure image fits within the container */
+    max-width: 300%; /* Restrict maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.main6-container img:hover,
+.main6-container img:focus,
+.main6-container img:active {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Image content styling */
+.main6-container .image-content {
+    width: 100%; /* Full width for image content */
+    max-width: 800px; /* Restrict maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px;
+}
+
+.container.sticky-container {
+    position: relative;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1; /* Take up available space */
+    margin-left: 20px; /* Add some space between the image and the text */
+}
+
+.image-content {
+    flex: 1; /* Take up available space */
+    max-width: 100%; /* Restrict image width to half of the container */
+}
+
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}

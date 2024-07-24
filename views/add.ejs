@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add iPhone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #F1F1F2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #1995AD;
+            margin: 20px 0;
+        }
+
+        .logo {
+            margin: 20px auto;
+            width: 100px;
+            height: auto;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="number"] {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: calc(100% - 22px);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #1995AD;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        form button:hover {
+            background-color: #A1D6E2;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #1995AD;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://pngfre.com/wp-content/uploads/apple-logo-23-300x300.png" alt="Apple Logo" class="logo">
+    <h1>Add iPhone</h1>
+    <form action="/add" method="POST">
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" required><br>
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" required><br>
+        <label for="storage">Storage (GB):</label>
+        <input type="number" id="storage" name="storage" required><br>
+        <label for="price">Price ($):</label>
+        <input type="number" id="price" name="price" required step="0.01"><br>
+        <button type="submit">Add iPhone</button>
+    </form>
+    <a href="/crud" class="back-link">Back to List</a>
+</body>
+</html>

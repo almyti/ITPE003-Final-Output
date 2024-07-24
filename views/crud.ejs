@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iPhone CRUD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #F1F1F2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #1995AD;
+            margin: 10px 0; /* Reduced margin to save space */
+        }
+
+        .logo {
+            margin: 10px auto; /* Reduced top margin and centered the logo */
+            width: 80px; /* Reduced width to save space */
+            height: auto;
+        }
+
+        a {
+            margin: 0 5px; /* Reduced horizontal margin */
+            text-decoration: none;
+            color: #1995AD;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            display: flex; /* Aligns children elements horizontally */
+            justify-content: center; /* Centers the input and button horizontally */
+            margin: 10px auto; /* Reduced top and bottom margins */
+        }
+
+        input[type="text"] {
+            margin-right: 5px; /* Adds space between the input and button */
+            padding: 8px; /* Adjust padding for input */
+            width: 200px; /* Set a fixed width for the input */
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            padding: 8px 15px; /* Adjust padding for the button */
+            background-color: #1995AD;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #A1D6E2;
+        }
+
+        table {
+            width: 90%; /* Increased width to utilize more space */
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 10px 15px; /* Reduced padding */
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1995AD;
+            color: white;
+        }
+
+        td {
+            background-color: #A1D6E2;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #F1F1F2;
+        }
+
+        .total-price {
+            font-size: 18px; /* Reduced font size */
+            margin-top: 10px; /* Reduced top margin */
+            font-weight: bold;
+            color: #1995AD; /* Added color for emphasis */
+        }
+
+        .back-link {
+            display: block; /* Makes it a block element for better spacing */
+            margin: 20px auto; /* Centers the link horizontally and adds space */
+            padding: 10px 15px; /* Adds padding for better click area */
+            background-color: #1995AD; /* Matches the color scheme */
+            color: white;
+            border-radius: 5px; /* Rounded corners */
+            width: fit-content; /* Adjusts width based on content */
+        }
+
+        .back-link:hover {
+            background-color: #A1D6E2; /* Matches button hover color */
+            text-decoration: none; /* Ensures no underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://pngfre.com/wp-content/uploads/apple-logo-23-300x300.png" alt="Apple Logo" class="logo">
+    <h1>iPhone Inventory</h1>
+    <a href="/add">Add New iPhone</a>
+    <form action="/search" method="GET">
+        <input type="text" name="query" placeholder="Search by model">
+        <button type="submit">Search</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>Color</th>
+                <th>Storage</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% iPhones.forEach(iPhone => { %>
+                <tr>
+                    <td><%= iPhone.model %></td>
+                    <td><%= iPhone.color %></td>
+                    <td><%= iPhone.storage %> GB</td>
+                    <td>$<%= iPhone.price %></td>
+                    <td>
+                        <a href="/edit/<%= iPhone._id %>">Edit</a>
+                        <a href="/delete/<%= iPhone._id %>">Delete</a>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    <a href="/" class="back-link">Back to Home</a>
+</body>
+</html>
