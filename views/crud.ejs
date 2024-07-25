@@ -131,7 +131,8 @@
             </tr>
         </thead>
         <tbody>
-            <% iPhones.forEach(iPhone => { %>
+            <% let totalPrice = 0; %> <!-- Initialize totalPrice -->
+            <% iPhones.forEach(iPhone => { %> <!-- Loop through each iPhone -->
                 <tr>
                     <td><%= iPhone.model %></td>
                     <td><%= iPhone.color %></td>
@@ -142,9 +143,16 @@
                         <a href="/delete/<%= iPhone._id %>">Delete</a>
                     </td>
                 </tr>
+                <% totalPrice += iPhone.price; %> <!-- Accumulate total price -->
             <% }) %>
         </tbody>
     </table>
+
+    <!-- Display Total Price -->
+    <div class="total-price">
+        Total Price: $<%= totalPrice.toFixed(2) %> <!-- Format total price -->
+    </div>
+
     <a href="/" class="back-link">Back to Home</a>
 </body>
 </html>
